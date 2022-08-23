@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: black;
+    padding: 90px 0;
+}
+
+h1{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 0px .8px 0px white, 0px 1px 0px rgb(226, 197, 197), 0px 2px 3px rgb(206, 174, 174) ;
+
+}
+
+.Calculadora{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #2fda68;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(15, 231, 159);
+    
+
+}
+
+.display{
+    display:flex;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font: normal 4.2rem serif;
+    border-radius: 5px;
+    word-break: break-word;
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.Calculadora button{
+    background-color: rgb(39, 31, 31);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgb(32, 30, 30);
+    overflow-wrap: break-word;
+
+}
+
+button:hover{
+    background-color: #49f390;
+    color: black;
+}
+
+footer{
+    color: black;
+    text-align: center;
+    margin: 80px 470px;
+    padding: 40px;
+    background-color: #49f390;
+    width: 25%;
+    border-radius: 20px;
+    text-shadow: 0px 0.1px rgb(14, 14, 14), 0px 0.3px rgb(39, 39, 39);
+    box-shadow: 0.5px 0.5px 3px 3px  #2fda68;
+}
+
+
+@media screen and (max-width:768px) {
+    *{
+        width: 100%;
+        margin: 0px;
+        position: relative;
+    }
+    footer{
+        margin-left: 200px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        
+    }
+    footer{
+        margin-left: 200px;
+        padding: 10px;
+    }
+    
+}
+

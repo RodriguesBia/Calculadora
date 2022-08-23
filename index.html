@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="Calculadora">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button id="apagar" onclick="back()">CE</button>
+            <button id="limpar" onclick="location.reload()">C</button>
+            <button id="resto" onclick="insert('%')">%</button>
+            <button id="divicao" onclick="insert('/')">/</button>
+            <button id="tec7" onclick="insert('7')">7</button>
+            <button id="tec8" onclick="insert('8')">8</button>
+            <button id="tec9" onclick="insert('9')">9</button>
+            <button id="multiplicar"
+            onclick="insert('*')">*</button>
+            <button id="tec4" onclick="insert('4')">4</button>
+            <button id="tec5" onclick="insert('5')">5</button>
+            <button id="tec6" onclick="insert('6')">6</button>
+            <button id="subtrair" onclick="insert('-')">-</button>
+            <button id="tec1" onclick="insert('1')">1</button>
+            <button id="tec2" onclick="insert('2')">2</button>
+            <button id="tec3" onclick="insert('3')">3</button>
+            <button id="somar" onclick="insert('+')">+</button>
+            <button id="iverter"onclick="insert('+/-')">+/-</button>
+            <button id="tec0" onclick="insert('0')" ">0</button>
+            <button id="decimal" onclick="insert(',')">,</button>
+            <button id="total" onclick="calcular()">=</button>
+
+
+
+        </div>
+    </div>
+
+    <footer class="rodape">
+       <p>Bianca Rodrigues - 08/2022</p>
+    </footer>
+    
+</body>
+</html>
